@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+docs: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+summary:
+  types: [http]
+  http_scheme: bearer
+  bearer_format: JWT
+  token_endpoint: POST /api/v1/auth/tokens
+  notes: >-
+    No public OpenAPI is published, so this profile is captured from the CipherTrust
+    Manager API reference and the official Terraform/Ansible clients rather than
+    derived from a spec. The API is served per CipherTrust Manager deployment.
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  bearer_format: JWT
+  description: >-
+    Clients POST credentials (or a refresh token) to /api/v1/auth/tokens to obtain
+    a short-lived JWT access token, then send it as `Authorization: Bearer <jwt>`
+    on subsequent /api/v1 requests. Grant types include password (username/password),
+    refresh_token, and client_credentials for registered clients. Optional
+    two-factor and external identity-provider (LDAP/OIDC) backed logins are supported.
+  sources: [docs, github.com/ThalesGroup/terraform-provider-ciphertrust]
