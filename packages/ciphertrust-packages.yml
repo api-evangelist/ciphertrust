@@ -1,0 +1,55 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/ThalesGroup
+packages:
+- language: hcl
+  registry: terraform
+  name: ThalesGroup/ciphertrust
+  version: 1.0.0-pre3
+  url: https://registry.terraform.io/providers/ThalesGroup/ciphertrust/latest
+  source: https://github.com/ThalesGroup/terraform-provider-ciphertrust
+  install: |
+    terraform {
+      required_providers {
+        ciphertrust = {
+          source = "ThalesGroup/ciphertrust"
+        }
+      }
+    }
+  description: >-
+    Official HashiCorp Terraform provider for CipherTrust Manager and CipherTrust
+    Data Security Platform as a Service (CDSPaaS). Manages 50+ resource types
+    (keys, secrets, connections, users, cloud key management for AWS/Azure/GCP).
+  official: true
+- language: python
+  registry: ansible-galaxy
+  name: thalesgroup.ciphertrust
+  version: 1.0.2
+  url: https://galaxy.ansible.com/ui/repo/published/thalesgroup/ciphertrust/
+  source: https://github.com/ThalesGroup/CDSP-Orchestration-Ansible
+  install: ansible-galaxy collection install thalesgroup.ciphertrust
+  description: >-
+    Official Ansible collection (CDSP Orchestration) automating the CipherTrust
+    Data Security Platform via the CipherTrust Manager REST API.
+  official: true
+- language: powershell
+  registry: github
+  name: CDSP-Orchestration
+  url: https://github.com/ThalesGroup/CDSP-Orchestration
+  source: https://github.com/ThalesGroup/CDSP-Orchestration
+  install: git clone https://github.com/ThalesGroup/CDSP-Orchestration
+  description: >-
+    Official PowerShell orchestration modules for multi-platform CipherTrust
+    Data Security Platform deployment and configuration.
+  official: true
+- language: java
+  registry: vendor
+  name: CipherTrust Application Protection (CADP/PP)
+  url: https://github.com/ThalesGroup/CipherTrust_Application_Protection
+  source: https://github.com/ThalesGroup/CipherTrust_Application_Protection
+  description: >-
+    Public code samples and resources for the CipherTrust Application Protection
+    SDKs (application-level encryption, key management, tokenization). The SDK
+    binaries themselves are distributed via the Thales support portal, not a
+    public package registry.
+  official: true

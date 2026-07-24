@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+host: https://cpl.thalesgroup.com
+note: >-
+  The CipherTrust Manager REST API is served from customer-deployed instances
+  (appliance / private cloud / CDSPaaS), so there is no single public API host
+  to probe for /.well-known/. These probes target the public product and docs
+  hosts. The apex thalesgroup.com returns empty (content-length 0) soft-200s for
+  well-known paths, which are not treated as real documents.
+documents:
+- path: /.well-known/security.txt
+  host: cpl.thalesgroup.com
+  status: 200
+  file: ciphertrust-security.txt
+- path: /.well-known/openid-configuration
+  host: cpl.thalesgroup.com
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  host: cpl.thalesgroup.com
+  status: 404
+- path: /.well-known/api-catalog
+  host: cpl.thalesgroup.com
+  status: 404
+- path: /.well-known/ai-plugin.json
+  host: cpl.thalesgroup.com
+  status: 404
+- path: /.well-known/security.txt
+  host: docs-cybersec.thalesgroup.com
+  status: 404

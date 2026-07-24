@@ -1,8 +1,30 @@
 aid: ciphertrust
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ciphertrust.png
 name: CipherTrust
-description: CipherTrust is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  CipherTrust Manager is Thales's centralized key- and data-security management
+  platform and the control plane of the CipherTrust Data Security Platform (CDSP).
+  It provides a unified plane for encryption key lifecycle management, secrets
+  management, certificates, tokenization, data discovery, and policy enforcement
+  across on-premises, hybrid, and multi-cloud environments including AWS, Azure,
+  and Google Cloud, with HSM/KMIP integration, Kubernetes and DevSecOps support,
+  role-based access controls, and post-quantum cryptography readiness. Developers
+  and platform teams automate it through a REST API (base path /api/v1, JWT bearer
+  authentication), an official HashiCorp Terraform provider (ThalesGroup/ciphertrust),
+  an Ansible collection, and PowerShell orchestration modules, plus Application
+  Protection SDKs for embedding encryption, key management, and tokenization in apps.
 url: https://raw.githubusercontent.com/api-evangelist/ciphertrust/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +34,74 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Security
+- Encryption
+- Key Management
+- Secrets Management
+- Data Protection
+- Cryptography
+- Tokenization
+- Compliance
+- KMIP
+apis:
+- name: CipherTrust Manager REST API
+  description: >-
+    REST API for the CipherTrust Manager control plane. Manages encryption keys,
+    secrets, certificates, tokenization, users, connections, and policies. Base
+    path /api/v1 with JWT bearer authentication obtained from POST /api/v1/auth/tokens.
+    The API is served from the customer's CipherTrust Manager deployment (appliance,
+    private cloud, or CipherTrust Data Security Platform as a Service), so there is
+    no single public base host; a built-in Swagger playground ships on each instance.
+  humanURL: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+  properties:
+  - type: APIReference
+    url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: VulnerabilityDisclosure
+  url: security/ciphertrust-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ciphertrust-domain-security.yml
+- type: Website
+  url: https://cpl.thalesgroup.com/encryption/ciphertrust-manager
+- type: DeveloperPortal
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/index.html
+- type: Documentation
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/index.html
+- type: APIReference
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+- type: GitHubOrganization
+  url: https://github.com/ThalesGroup
+- type: Support
+  url: https://supportportal.thalesgroup.com
+- type: Authentication
+  url: authentication/ciphertrust-authentication.yml
+- type: Packages
+  url: packages/ciphertrust-packages.yml
+- type: SDKs
+  name: CipherTrust official clients (Terraform, Ansible, PowerShell)
+  url: packages/ciphertrust-packages.yml
+- type: WellKnown
+  url: well-known/ciphertrust-well-known.yml
+- type: SecurityTxt
+  url: well-known/ciphertrust-security.txt
+- type: Security
+  url: https://cpl.thalesgroup.com/technical-support/how-to-report-a-security-vulnerability
+- type: Conformance
+  url: conformance/ciphertrust-conformance.yml
+- type: Compliance
+  url: https://cpl.thalesgroup.com/encryption/ciphertrust-manager
+- type: LLMsTxt
+  url: llms/ciphertrust-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

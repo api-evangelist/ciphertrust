@@ -1,0 +1,24 @@
+# CipherTrust (Thales)
+
+> CipherTrust Manager is Thales's centralized key- and data-security management platform and the control plane of the CipherTrust Data Security Platform (CDSP). It manages encryption key lifecycle, secrets, certificates, tokenization, and policy across on-premises, hybrid, and multi-cloud (AWS/Azure/GCP) environments, with HSM/KMIP integration and post-quantum crypto readiness. Its REST API (base path /api/v1, JWT bearer auth) is automated via an official Terraform provider, an Ansible collection, and PowerShell modules.
+
+## APIs
+- [CipherTrust Manager REST API reference](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html): REST API for keys, secrets, certificates, tokenization, users, connections, and policies. Base path /api/v1, JWT bearer authentication via POST /api/v1/auth/tokens. Served per customer deployment (appliance / private cloud / CDSPaaS).
+
+## Docs
+- [Product overview](https://cpl.thalesgroup.com/encryption/ciphertrust-manager): CipherTrust Manager product page.
+- [Developer / documentation portal](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/index.html): CipherTrust Data Security Platform documentation.
+- [Support portal](https://supportportal.thalesgroup.com): Thales support portal.
+
+## Automation
+- [Terraform provider (ThalesGroup/ciphertrust)](https://registry.terraform.io/providers/ThalesGroup/ciphertrust/latest): Official Terraform provider (50+ resources).
+- [Ansible collection (thalesgroup.ciphertrust)](https://galaxy.ansible.com/ui/repo/published/thalesgroup/ciphertrust/): Official CDSP orchestration collection.
+- [PowerShell orchestration](https://github.com/ThalesGroup/CDSP-Orchestration): Official PowerShell modules.
+- [Application Protection SDKs (samples)](https://github.com/ThalesGroup/CipherTrust_Application_Protection): App-level encryption, key management, tokenization.
+
+## Security
+- [security.txt](https://cpl.thalesgroup.com/.well-known/security.txt): RFC 9116 security contact.
+- [How to report a security vulnerability](https://cpl.thalesgroup.com/technical-support/how-to-report-a-security-vulnerability): Responsible disclosure policy.
+
+## Code
+- [GitHub organization (ThalesGroup)](https://github.com/ThalesGroup): CipherTrust and Thales cybersecurity repositories.

@@ -1,0 +1,29 @@
+generated: '2026-07-18'
+method: searched
+source: https://cpl.thalesgroup.com/encryption/ciphertrust-manager
+standards:
+- id: kmip
+  conforms: true
+  evidence: >-
+    CipherTrust Manager provides "standards-based KMIP solutions" and acts as a
+    KMIP key-management server (product page "HSM and KMIP Integration").
+- id: jwt-bearer-auth
+  conforms: true
+  evidence: >-
+    REST API authenticates with JWT bearer tokens issued by POST /api/v1/auth/tokens.
+- id: oauth2
+  conforms: false
+  evidence: API uses JWT bearer tokens rather than OAuth2 authorization flows.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public OpenAPI available to confirm application/problem+json usage.
+compliance_enablement:
+  note: >-
+    Regulatory frameworks CipherTrust Manager is documented to help customers
+    address (product-level compliance enablement, not vendor self-certification).
+  frameworks:
+  - GDPR
+  - PCI DSS
+  - HIPAA
+  - NIS2
+  - DORA

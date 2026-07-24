@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:cpl.security@thalesgroup.com
+Contact: https://cpl.thalesgroup.com/
+Expires: 2023-05-15T16:00:00.000Z
+Encryption: https://www3.thalesgroup.com/includes/support/ssrt.txt
+Preferred-Languages: en, fr
+Canonical: https://cpl.thalesgroup.com/.wellknown/security.txt
+Policy: https://cpl.thalesgroup.com/technical-support/how-to-report-a-security-vulnerability
+Hiring: https://cpl.thalesgroup.com/careers
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEE2dsPWCCgU/DCDAn+eoZQVvUHzl8FAmLEcy0ACgkQeoZQVvUH
+zl851Qv9FlqnpNhBX2/QGLPF8efYvt82L6hbpGsvyB/rHwYc25vUqENZ17A59+if
+6obOYpcfje1YDoYJGBnQmohuv7r10Itc5I3MPnrGO0MxfOkxykgFBbPkLLCJCO/y
+n3P1A8fc5iECt+ZCLzVUrSFvNR/mxVJkFTHrMMyWyzi2ZzgV4f8n+2d3NvwJQ4nQ
+ftES+yMnG8Y9d4w1xMkwu1c3Wy31keUq3aNOK+eomAJYYTDtvHCyGIbIrjuaRZCe
+LTWZsV3uftcQkQLsvgkfi/kr8sbGXUAWMSGXqBlwBc27Jz8oVWQ7LhDgyYewWldQ
+xNMzLTLS6952ZiUTOldNg1kAdkMZIxwKcHbuTpXdx0IK+EZewnFSM2YlO9WgZb1g
+vj9aqGNNBJC/WIaJcG0zA/1wE/VrXV92wiHm55AQlSOUSD5r/VPYNe2rTRFGVJIS
+5Cyxpr8WnktZaToTbf5TZptcJnMSXELgrinrQvsr+vPgDETK4f8B+URiG6lT7TdD
+dVcJWuCP
+=rTEH
+-----END PGP SIGNATURE-----
