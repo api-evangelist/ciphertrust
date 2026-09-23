@@ -1,29 +1,28 @@
 generated: '2026-07-18'
 method: searched
 host: https://cpl.thalesgroup.com
-note: >-
-  The CipherTrust Manager REST API is served from customer-deployed instances
-  (appliance / private cloud / CDSPaaS), so there is no single public API host
-  to probe for /.well-known/. These probes target the public product and docs
-  hosts. The apex thalesgroup.com returns empty (content-length 0) soft-200s for
-  well-known paths, which are not treated as real documents.
-documents:
-- path: /.well-known/security.txt
-  host: cpl.thalesgroup.com
-  status: 200
-  file: ciphertrust-security.txt
-- path: /.well-known/openid-configuration
-  host: cpl.thalesgroup.com
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  host: cpl.thalesgroup.com
-  status: 404
-- path: /.well-known/api-catalog
-  host: cpl.thalesgroup.com
-  status: 404
-- path: /.well-known/ai-plugin.json
-  host: cpl.thalesgroup.com
-  status: 404
-- path: /.well-known/security.txt
-  host: docs-cybersec.thalesgroup.com
-  status: 404
+note: The CipherTrust Manager REST API is served from customer-deployed instances (appliance / private
+  cloud / CDSPaaS), so there is no single public API host to probe for /.well-known/. These probes target
+  the public product and docs hosts. The apex thalesgroup.com returns empty (content-length 0) soft-200s
+  for well-known paths, which are not treated as real documents.
+hosts:
+- host: https://cpl.thalesgroup.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: ciphertrust-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
