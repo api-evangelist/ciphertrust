@@ -1,4 +1,5 @@
 aid: ciphertrust
+
 deliveryModel:
   model: library
   open_source: false
@@ -10,6 +11,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -23,30 +25,38 @@ accessModel:
   - security
   generated: '2026-09-03'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ciphertrust.png
+
 name: CipherTrust
-description: >-
-  CipherTrust Manager is Thales's centralized key- and data-security management
-  platform and the control plane of the CipherTrust Data Security Platform (CDSP).
-  It provides a unified plane for encryption key lifecycle management, secrets
-  management, certificates, tokenization, data discovery, and policy enforcement
-  across on-premises, hybrid, and multi-cloud environments including AWS, Azure,
-  and Google Cloud, with HSM/KMIP integration, Kubernetes and DevSecOps support,
-  role-based access controls, and post-quantum cryptography readiness. Developers
-  and platform teams automate it through a REST API (base path /api/v1, JWT bearer
-  authentication), an official HashiCorp Terraform provider (ThalesGroup/ciphertrust),
-  an Ansible collection, and PowerShell orchestration modules, plus Application
-  Protection SDKs for embedding encryption, key management, and tokenization in apps.
+
+description: CipherTrust Manager is Thales's centralized key- and data-security management platform and the control plane of the CipherTrust Data
+  Security Platform (CDSP). It provides a unified plane for encryption key lifecycle management, secrets management, certificates, tokenization,
+  data discovery, and policy enforcement across on-premises, hybrid, and multi-cloud environments including AWS, Azure, and Google Cloud, with
+  HSM/KMIP integration, Kubernetes and DevSecOps support, role-based access controls, and post-quantum cryptography readiness. Developers and
+  platform teams automate it through a REST API (base path /api/v1, JWT bearer authentication), an official HashiCorp Terraform provider (ThalesGroup/ciphertrust),
+  an Ansible collection, and PowerShell orchestration modules, plus Application Protection SDKs for embedding encryption, key management, and
+  tokenization in apps.
+
 url: https://raw.githubusercontent.com/api-evangelist/ciphertrust/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: vc-portfolio
+
 x-backed-by:
 - battery-ventures
+
 x-tier: stub
+
 x-tier-reason: portfolio-lead
+
 specificationVersion: '0.23'
+
 created: '2026-07-17'
+
 modified: '2026-07-18'
+
 tags:
 - Company
 - Security
@@ -58,25 +68,24 @@ tags:
 - Tokenization
 - Compliance
 - KMIP
-apis:
-- name: CipherTrust Manager REST API
-  description: >-
-    REST API for the CipherTrust Manager control plane. Manages encryption keys,
-    secrets, certificates, tokenization, users, connections, and policies. Base
-    path /api/v1 with JWT bearer authentication obtained from POST /api/v1/auth/tokens.
-    The API is served from the customer's CipherTrust Manager deployment (appliance,
-    private cloud, or CipherTrust Data Security Platform as a Service), so there is
-    no single public base host; a built-in Swagger playground ships on each instance.
-  humanURL: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
-  properties:
-  - type: APIReference
-    url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/ciphertrust-hosts.yml
+- type: Vendors
+  url: vendors/ciphertrust-vendors.yml
+- type: Newsroom
+  url: https://cpl.thalesgroup.com/about-us/newsroom
+- type: Leadership
+  url: https://cpl.thalesgroup.com/leadership
+- type: GettingStarted
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/get_started/index.html
 - type: VulnerabilityDisclosure
   url: security/ciphertrust-vulnerability-disclosure.yml
 - type: DomainSecurity
@@ -110,8 +119,40 @@ common:
   url: conformance/ciphertrust-conformance.yml
 - type: Compliance
   url: https://cpl.thalesgroup.com/encryption/ciphertrust-manager
-- type: LLMsTxt
-  url: llms/ciphertrust-llms.txt
+- type: Blog
+  url: https://cpl.thalesgroup.com/blog
+- type: Pricing
+  url: https://cpl.thalesgroup.com/encryption/ciphertrust-manager#pricing
+- type: SignUp
+  url: https://cpl.thalesgroup.com/contact-us
+- type: TermsOfService
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/legal/terms.html
+- type: PrivacyPolicy
+  url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/legal/privacy.html
+- type: Postman
+  url: https://www.postman.com/thalesgroup/workspace/ciphertrust
+
+apis:
+- name: CipherTrust Manager REST API
+  description: REST API for the CipherTrust Manager control plane. Manages encryption keys, secrets, certificates, tokenization, users, connections,
+    and policies. Base path /api/v1 with JWT bearer authentication obtained from POST /api/v1/auth/tokens. The API is served from the customer's
+    CipherTrust Manager deployment (appliance, private cloud, or CipherTrust Data Security Platform as a Service), so there is no single public
+    base host; a built-in Swagger playground ships on each instance.
+  humanURL: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+  properties:
+  - type: APIReference
+    url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+  aid: ciphertrust:ciphertrust-manager-rest-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are rendered via JavaScript and provide no machine‑readable OpenAPI/AsyncAPI spec.
+  evidence:
+    - url: https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html
+      status: 200
+  checked: '2026-10-04'
+
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
