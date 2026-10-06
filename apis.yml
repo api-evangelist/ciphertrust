@@ -55,7 +55,7 @@ specificationVersion: '0.23'
 
 created: '2026-07-17'
 
-modified: '2026-07-18'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -76,6 +76,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://cpl.thalesgroup.com/blog/feed
+  type: BlogRSS
 - type: Hosts
   url: hosts/ciphertrust-hosts.yml
 - type: Vendors
