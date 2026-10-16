@@ -2,22 +2,18 @@
 kin_checks:
   slug: ciphertrust
   schema_version: 0.23.0
-  scored_at: '2026-10-03'
-  run_ts: 2026-10-03T024842
+  scored_at: '2026-10-11'
+  run_ts: 2026-10-11T110117
   note: Actionable checks (missed + partial) in `checks`, plus the ids that did not
     apply in `na`. Everything else in rubric/scoring-0.23.0.yml was earned; counts
     below let you verify that.
   counts:
     total: 153
-    earned: 22
+    earned: 33
     partial: 2
-    missed: 83
+    missed: 72
     na: 46
   checks:
-  - id: newsroom_present
-    status: missed
-  - id: leadership_present
-    status: missed
   - id: multiple_apis
     status: missed
   - id: base_url_per_api
@@ -74,41 +70,23 @@ kin_checks:
     status: missed
   - id: examples_published
     status: missed
-  - id: getting_started_present
-    status: missed
   - id: sdk_count_3
     status: missed
   - id: cli_present
     status: missed
   - id: console_or_sandbox
     status: missed
-  - id: postman_present
-    status: missed
   - id: agent_skill_present
-    status: missed
-  - id: blog_present
     status: missed
   - id: plans_present
     status: missed
   - id: plans_multiple
-    status: missed
-  - id: pricing_link
-    status: missed
-  - id: sign_up_present
-    status: missed
-  - id: terms_of_service
-    status: missed
-  - id: privacy_policy
     status: missed
   - id: finops_mapped
     status: missed
   - id: trust_center
     status: missed
   - id: reg_oauth_scopes
-    status: missed
-  - id: reg_terms_of_service
-    status: missed
-  - id: reg_privacy_policy
     status: missed
   - id: reg_named_standard_conformance
     status: missed
