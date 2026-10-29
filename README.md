@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CipherTrust is a company surfaced as a portfolio company of battery-ventures and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+CipherTrust Manager is Thales's centralized key- and data-security management platform and the control plane of the CipherTrust Data Security Platform (CDSP). It provides a unified plane for encryption key lifecycle management, secrets management, certificates, tokenization, data discovery, and policy enforcement across on-premises, hybrid, and multi-cloud environments including AWS, Azure, and Google Cloud, with HSM/KMIP integration, Kubernetes and DevSecOps support, role-based access controls, and post-quantum cryptography readiness. Developers and platform teams automate it through a REST API (base path /api/v1, JWT bearer authentication), an official HashiCorp Terraform provider (ThalesGroup/ciphertrust), an Ansible collection, and PowerShell orchestration modules, plus Application Protection SDKs for embedding encryption, key management, and tokenization in apps.
 
-Backed by: battery-ventures
+**Areas:** Company · Security · Encryption · Key Management · Secrets Management · Data Protection · Cryptography · Tokenization · Compliance · KMIP
+
+## CipherTrust on APIs.io
+
+Everything profiled for CipherTrust is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ciphertrust/](https://apis.io/providers/ciphertrust/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [CipherTrust Manager REST API](https://apis.io/apis/ciphertrust/ciphertrust-manager-rest-api/) — REST API for the CipherTrust Manager control plane. Manages encryption keys, secrets, certificates, tokenization, users, connections, and policies. Base…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ciphertrust Authentication](https://apis.io/security/ciphertrust/ciphertrust-authentication/)
+- [Ciphertrust Domain Security](https://apis.io/security/ciphertrust/ciphertrust-domain-security/)
+- [Ciphertrust Vulnerability Disclosure](https://apis.io/security/ciphertrust/ciphertrust-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://cpl.thalesgroup.com/encryption/ciphertrust-manager)
+- [Documentation](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/index.html)
+- [Getting started](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/get_started/index.html)
+- [API reference](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/reference/index.html)
+- [Pricing](https://cpl.thalesgroup.com/encryption/ciphertrust-manager#pricing)
+- [Sign up](https://cpl.thalesgroup.com/contact-us)
+- [Support](https://supportportal.thalesgroup.com)
+- [Blog](https://cpl.thalesgroup.com/blog)
+- [Security](https://cpl.thalesgroup.com/technical-support/how-to-report-a-security-vulnerability)
+- [Compliance](https://cpl.thalesgroup.com/encryption/ciphertrust-manager)
+- [Terms of service](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/legal/terms.html)
+- [Privacy policy](https://docs-cybersec.thalesgroup.com/bundle/latest-cdsp-cm/page/legal/privacy.html)
+- [GitHub](https://github.com/ThalesGroup)
+
+## API Evangelist rating
+
+**Kin Score 38.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.9 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 69.0 |
+| Access clarity | 52.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ciphertrust/](https://apis.io/providers/ciphertrust/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for CipherTrust: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ciphertrust/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
